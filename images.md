@@ -1,5 +1,5 @@
 ## FLOWCHART
-![Flowchart](images/flowchart.png)
+![Flowchart](images/flownchart.png)
 
 ## WIREFRAME START
 ![Wireframe Start](images/wireframe-start.png)
@@ -10,5 +10,5 @@
 ## WIREFRAME BIGGER DESCRIPTION
 ![Wireframe Big Description](images/wireframe-big-description.png)
 
-## STYLE TILE
+## STYLE
 ![Styletile](images/styletile.png)
