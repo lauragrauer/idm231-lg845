@@ -7,27 +7,27 @@ body {
     letter-spacing: 0.03rem;
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents scrolling */
 }
 
 /* BUTTONS BACKGROUND CONTAINER */
 .buttons-background {
     border: 0.08rem solid rgba(0, 0, 0, 0.25);
-    padding: 20px;
+    padding: 40px; /* Increase padding for bigger container */
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    transition: transform 0.3s ease;  /* Smooth shrinking effect */
-    max-width: 85vw; 
-    max-height: 85vh;
+    max-width: 180vw; /* Increase width of the container */
+    max-height: 95vh; /* Increase height of the container */
+    overflow: hidden; /* Ensure no scroll within the button container */
 }
 
 /* BUTTON CONTAINER */
@@ -35,8 +35,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+    align-items: center;
+    gap: 1.5rem; /* Increase space between buttons */
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow of buttons */
 }
 
 /* BUTTON ITEM */
@@ -44,6 +47,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 1 calc(20%);  /* Allow buttons to be larger */
+    min-width: 180px;  /* Increase button minimum width */
+    max-width: 180px;  /* Increase button maximum width */
+    box-sizing: border-box;
+    overflow: visible; /* Ensures no overflow */
+    margin: 0; /* Removes space between button items */
 }
 
 /* IMAGE BUTTON STYLE */
@@ -52,37 +61,45 @@ body {
     border: none;
     padding: 0;
     cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* IMAGE SIZE: Scalable */
 .button-image {
-    width: clamp(8rem, 10vw, 12rem);   /* Scales smoothly with screen */
-    height: auto;
+    width: 100%;  /* Scales the image to fill the button */
+    height: auto;  /* Maintains aspect ratio */
+    max-width: 100%;  /* Ensures images are constrained to the button size */
+    max-height: 200px;  /* Increase max height for bigger images */
+    object-fit: contain;  /* Ensures the whole image is visible without distortion */
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
 }
 
 /* IMAGE HOVER SCALE */
 .image-button:hover .button-image {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Slightly enlarge image on hover */
 }
 
 /* HEADERS */
 h1 {
     font-family: 'Newsreader', serif;
-    font-size: clamp(2rem, 4vw, 3rem);  /* Slightly larger scaling */
-    margin-bottom: 0.5rem;
+    font-size: clamp(3rem, 5vw, 4rem); /* Increase font size */
+    margin-bottom: 1rem;
     margin-top: 0.01rem;
 }
 
 h2 {
     font-family: 'Nixie One', sans-serif;
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);  
-    margin-bottom: 0.5rem;
+    font-size: clamp(1.5rem, 3vw, 2.2rem); /* Increase font size */
+    margin-bottom: 1rem;
 }
 
 h3 {
     font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem); /* Increase font size */
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
     letter-spacing: 0.1rem;
@@ -92,7 +109,7 @@ h3 {
 /* PARAGRAPH STYLE */
 p {
     font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem); /* Increase font size */
     line-height: 1.4;
 }
 
@@ -103,24 +120,5 @@ p {
     background-color: #000000;
     opacity: 25%;
     text-align: center;
-    width: 75%;
-}
-
-/* MEDIA QUERIES FOR GENTLE SCALING */
-@media (max-width: 1200px) {
-    .buttons-background {
-        transform: scale(0.95);  /* Only slightly smaller */
-    }
-}
-
-@media (max-width: 900px) {
-    .buttons-background, .button-image {
-        transform: scale(0.95);  /* Subtle scaling */
-    }
-}
-
-@media (max-width: 600px) {
-    .buttons-background {
-        transform: scale(0.85);  /* Keeps content readable on mobile */
-    }
+    width: 80%;
 }
