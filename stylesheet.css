@@ -13,7 +13,7 @@ body, html {
     justify-content: center;
     box-sizing: border-box;
     overflow: hidden; /* Prevent scrolling by default */
-    overflow-x: hidden; /* Prevent horizontal scrolling globally */
+    overflow-x: hidden; /* 💥 Prevent horizontal scrolling globally */
 }
 
 /* 🌟 BUTTONS BACKGROUND CONTAINER */
@@ -127,8 +127,8 @@ p {
 /* 🌟 MOBILE SPECIFIC STYLES - HORIZONTAL PAIRS WITH VERTICAL SCROLLING */
 @media screen and (max-width: 1024px) {
     body {
-        overflow: hidden; /* Disable scrolling for tablet and below */
-        height: 100vh;
+        overflow-y: auto; /* Enable vertical scrolling on mobile */
+        height: auto; /* Ensure the full content can scroll */
     }
 
     .buttons-background {
@@ -157,13 +157,5 @@ p {
         max-height: 180px; 
         width: 100%;
         object-fit: contain;  
-    }
-}
-
-/* 🌟 TABLET SPECIFIC STYLES - UNSCROLLABLE */
-@media screen and (max-width: 768px) {
-    body {
-        overflow: hidden; /* Disable scrolling on tablets and below */
-        height: 100vh; /* Prevent vertical scrolling */
     }
 }
