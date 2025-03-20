@@ -1,6 +1,10 @@
-/* 🌟 BODY */
-body, html {
+/* BODY */
+body {
     background-color: #CAC8C3;
+    background-image: url(images/paper-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -12,13 +16,14 @@ body, html {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    overflow: hidden; /* Prevent scrolling by default */
-    overflow-x: hidden; /* 💥 Prevent horizontal scrolling globally */
+    overflow: hidden; /* Prevents scrolling */
 }
 
-/* 🌟 BUTTONS BACKGROUND CONTAINER */
+/* BUTTONS BACKGROUND CONTAINER */
 .buttons-background {
-    border: 0.08rem solid rgba(0, 0, 0, 0.25);
+    background-color: #1f1a1a;
+    background-color: rgba(31, 26, 26, 0.9);
+    background-blend-mode: multiply;
     padding: 40px;
     border-radius: 8px;
     box-sizing: border-box;
@@ -29,34 +34,35 @@ body, html {
     max-width: 180vw; 
     max-height: 95vh;
     overflow: hidden; 
+    box-shadow: 10px 10px 10px rgba(0.3, 0.3, 0.3, 0.3); 
 }
 
-/* 🌟 BUTTON CONTAINER */
+/* BUTTON CONTAINER */
 .button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem; 
+    gap: 1.5rem;
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-/* 🌟 BUTTON ITEM */
+/* BUTTON ITEM */
 .button-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 calc(20%);
-    min-width: 180px;  
+    flex: 1 1 calc(20%);  
+    min-width: 180px; 
     max-width: 180px;  
     box-sizing: border-box;
     overflow: visible; 
     margin: 0; 
 }
 
-/* 🌟 IMAGE BUTTON STYLE */
+/* IMAGE BUTTON STYLE */
 .image-button {
     background: none;
     border: none;
@@ -68,53 +74,54 @@ body, html {
     align-items: center;
 }
 
-/* 🌟 IMAGE SIZE: Scalable */
+/* IMAGE SIZE: Scalable */
 .button-image {
-    width: 100%;  
-    height: auto;  
+    width: 100%; 
+    height: auto; 
     max-width: 100%;
-    max-height: 200px;  
-    object-fit: contain;  
+    max-height: 200px; 
+    object-fit: fill; 
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
 }
 
-/* 🌟 IMAGE HOVER SCALE */
+/* IMAGE HOVER SCALE */
 .image-button:hover .button-image {
-    transform: scale(1.1); 
+    transform: scale(1.03);
+    object-fit: contain;
 }
 
-/* 🌟 HEADERS */
+/* HEADERS */
 h1 {
     font-family: 'Newsreader', serif;
-    font-size: clamp(3rem, 5vw, 4rem);
+    font-size: clamp(3rem, 5vw, 4rem); 
     margin-bottom: 1rem;
     margin-top: 0.01rem;
 }
 
 h2 {
     font-family: 'Nixie One', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(1.5rem, 3vw, 2.2rem); 
     margin-bottom: 1rem;
 }
 
 h3 {
     font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-size: clamp(1.2rem, 2.5vw, 2rem); 
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
     letter-spacing: 0.1rem;
     color: #646464;
 }
 
-/* 🌟 PARAGRAPH STYLE */
+/* PARAGRAPH STYLE */
 p {
     font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem); 
     line-height: 1.4;
 }
 
-/* 🌟 DIVIDER STYLE */
+/* DIVIDER STYLE */
 .divider {
     border: 0;
     height: 0.1rem;
@@ -124,6 +131,7 @@ p {
     width: 80%;
 }
 
+/* 🌟 MOBILE SPECIFIC STYLES - VERTICAL SCROLLING */
 /* 🌟 MOBILE SPECIFIC STYLES - HORIZONTAL PAIRS WITH VERTICAL SCROLLING */
 @media screen and (max-width: 1024px) {
     body {
@@ -135,22 +143,24 @@ p {
         width: 90vw;  
         height: auto;  
         max-height: none; 
-        overflow: visible; 
+        overflow: visible;
+        margin-bottom: 2rem;
+        margin-top: 1rem; 
     }
 
     .button-container {
         display: flex;
-        flex-wrap: wrap; /* Wrap into pairs */
-        justify-content: center; 
+        flex-wrap: wrap; /* Ensure wrapping for pairs */
+        justify-content: center; /* Center the pairs */
         gap: 1.5rem;  
         overflow: visible; 
     }
 
     .button-item {
-        flex: 0 0 calc(50% - 0.75rem); /* Two items per row */
-        min-width: 150px;  
+        flex: 0 0 calc(20% - 0.75rem); 
+        min-width: 140px;  
         max-width: 100%;  
-        box-sizing: border-box; 
+        object-fit: contain;  
     }
 
     .button-image {
