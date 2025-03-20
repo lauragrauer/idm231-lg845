@@ -1,19 +1,16 @@
-<b>THIS IS MERELY A ROUGH DRAFT OF THE TEXT. Everything could change, including the months/ birds associated with it/ the general bird personality I want to associate with the month itself (Example, if I want to make January a Harpy Eagle, I shouldn’t include their murderous nature and lack of fear towards attacking humans…). I love the aviary species though :D. <h3><i>Too bad I also like chicken tenders more.</i></h3></b>
+<br>
+<h2>JANUARY</h2>   <h3>HARPY EAGLE</h3>
+The Harpy Eagle…a proud and stealthy hunter, well regarded as one of the more independent creatures in the birds of prey category. With a commanding presence, the Harley Eagle reflects a self sufficient personality with those born in this time period.  Just as the apex predator focuses on its prey with precision, these guys are equally driven to achieve their goals. Natural leaders with a clear direction can often become rather solitary in their pursuit of success, but are heavily committed to their values, ensuring they stand out as an accomplishment.
 <br>
 
 <br>
-<h2>JANUARY</h2>  <h3>BIRD</h3>
-Those born in January are often ambitious and goal oriented, giving them the ability to start new tasks with ease.
+<h2>FEBRUARY</h2>  <h3>MUTE SWAN</h3>
+Known for love! The swan embodies the romantic and thoughtful nature of February. Similar to those born in this month, swans possess a deep sense of loyalty in an elegant manner, often seen as symbols of love and partnership. However, similar to the month’s climate itself, February can bring a mix of cold and unpredictable moments, bringing out the swan’s more guarded, sensitive side; this can cause them to become a bit assertive and overly sentimental. Despite these occasional challenges, the swan’s ability to love deeply and remain devoted to their partner makes them a beautiful representation of a heartfelt connection.
 <br>
 
 <br>
-<h2>FEBRUARY</h2>  <h3>SWAN</h3>
-Known for love! The swan embodies the romantic and thoughtful nature of February. Similar to those born in this month, swans possess a deep sense of loyalty in an elegant manner, often seen as symbols of love and partnership. However, similar to the month’s climate itself, February can bring a mix of cold and unpredictable moments, bringing out the swan’s more guarded, sensitive side.; this can cause them to become a bit assertive and overly sentimental. Despite these occasional challenges, the swan’s ability to love deeply and remain devoted to their partner makes them a beautiful representation of a heartfelt connection.
-<br>
-
-<br>
-<h2>MARCH</h2>  <h3>TITLE</h3>
-Insert description here
+<h2>MARCH</h2>  <h3>BALTIMORE ORIOLE</h3>
+Natural artists at heart, brimming with creativity and imagination! With its vibrant plumage, they bring a unique and refreshing energy to everything they do, leaving a lasting impression wherever they go. They offer a sense of renewal, much like their migratory arrival in the spring. Though they thrive in a lively setting, they also value quiet moments of introspection. Sometimes a small break of solitude to recharge aligns with the refinement of their vision. While they may appear reserved at times, their potential for artistic expression and personal growth knows no bounds.
 <br>
 
 <br>
@@ -22,43 +19,43 @@ With its unique blue plumage and bold crest, the Steller's Jay stands out in the
 <br>
 
 <br>
-<h2>MAY</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>MAY</h2>  <h3>RED CRESTED CARDINAL</h3>
+Be careful… you’ll pull others like a magnet! The Red Crested Cardinals are often a charismatic bunch, full with energy to go alongside. The lively red colored crest mirrors the cardinal’s vibrant personality, often attracting attention in social situations. Known for their striking appearance, these aviaries also carry a sharp mindset and zest for life, easily able to captivate others with their talent and enthusiasm. While they may struggle with the occasional indecision, their confident song and presence exemplifies the Red Crested Cardinal’s knack for adapting to seasonal changes and inspiring thought around them with their innate charm.
 <br>
 
 <br>
-<h2>JUNE</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>JUNE</h2>  <h3>ROADRUNNER</h3>
+Be careful… you’ll pull others like a magnet! The Red Crested Cardinals are often a charismatic bunch, full with energy to go alongside. The lively red colored crest mirrors the cardinal’s vibrant personality, often attracting attention in social situations. Known for their striking appearance, these aviaries also carry a sharp mindset and zest for life, easily able to captivate others with their talent and enthusiasm. While they may struggle with the occasional indecision, their confident song and presence exemplifies the Red Crested Cardinal’s knack for adapting to seasonal changes and inspiring thought around them with their innate charm.
 <br>
 
 <br>
-<h2>JULY</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>JULY</h2>  <h3>SEAGULL</h3>
+July-born individuals are typically adventurous and independent, with a strong desire for personal freedom, much like the Seagull. These birds are often seen roaming coastal areas, highly self-sufficient, and not afraid to assert their territory. Similarly, July-borns are often self-reliant, yet they can be moody and temperamental at times… Especially when they feel their autonomy is threatened. Much like the gull, they have a sharp wit and a sense of resilience, always able to weather challenges and keep moving forward. However, like the gull’s loud, sharp calls, July-borns can sometimes express their emotions with intensity, especially when confronted with adversity.
 <br>
 
 <br>
-<h2>AUGUST</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>AUGUST</h2>  <h3>ACORN WOODPECKER</h3>
+The Acorn Woodpecker is a true embodiment of generosity and community, traits that reflect the essence of those born in August. August-borns are known for their hardworking and philanthropic nature, just as the Acorn Woodpecker works tirelessly to store acorns and support its community. They are very self-motivated, always striving for the betterment of their loved ones, and have an innate sense of loyalty. Like the woodpecker, August-born individuals are grounded and dependable, with a strong focus on their family and close-knit relationships. They may appear serious or intense in their efforts, but their commitment to others makes them incredibly compassionate and giving.
 <br>
 
 <br>
-<h2>SEPTEMBER</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>SEPTEMBER</h2>  <h3>GREAT BLUE HERON</h3>
+People born in September are often intelligent, spiritual, and reflective, much like the Great Blue Heron. Known for its composed and patient demeanor, the heron mirrors the calm, introspective nature of September-borns who often seek clarity and wisdom in their pursuits. Similar to the heron’s deliberate hunting style, these individuals tend to take their time in making decisions, weighing their options carefully before acting. The heron’s solitary nature also aligns with September-borns’ introspective tendencies, as they often prefer quiet spaces for deep reflection and contemplation, making them both thoughtful and empathetic.
 <br>
 
 <br>
-<h2>OCTOBER</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>OCTOBER</h2>  <h3>CANADA GOOSE</h3>
+The Canada Goose is an ideal representation of October-born individuals, as it symbolizes loyalty and determination. These individuals are known for their resilience and strength, as well as their ability to build strong connections with those they deeply care for. Their migratory nature also reflects the October-born’s ability to adapt to new circumstances and overcome challenges. Much like the bird's constant need for companionship during migration, October-borns thrive in close-knit communities, relying on their strong sense of loyalty and authenticity to guide them through challenges. They value their relationships and make powerful bonds that last through time, similar to a Canada Goose’s enduring partnerships within flocks.
 <br>
 
 <br>
-<h2>NOVEMBER</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>NOVEMBER</h2>  <h3>CAROLINA CHICKADEE</h3>
+The Carolina Chickadee embodies the personality of those born in November, with its sharp, perceptive nature and empathy. Known for its curiosity and generosity, the chickadee is a social bird that thrives on strong relationships within its community, much like the November-born who excel at motivating and supporting their loved ones. These individuals tend to be very perceptive, noticing details that others may miss, and have a natural ability to inspire and encourage those around them. Like the chickadee’s ability to adapt to changes in its environment, November-borns are resilient and driven. Regardless, they also prefer to avoid unnecessary praise and spotlight, much like the humble and understated nature of the Carolina Chickadee.
 <br>
 
 <br>
-<h2>DECEMBER</h2>  <h3>BIRD</h3>
-Insert description here
+<h2>DECEMBER</h2>  <h3>SNOWY OWL</h3>
+The Snowy Owl symbolizes wisdom, independence, and clarity of thought. Much like the owl, December-born individuals possess a quiet strength and are often patient when it comes to making decisions. They are very independent, with a deep sense of personal responsibility. The Snowy Owl, often associated with winter's stark beauty, reflects the December-born’s preference for solitude, where they can focus on their goals without distraction. However, just as the owl’s keen vision allows it to see clearly in the dark, December-borns are able to navigate through life with a unique insight, often making decisions that others may not immediately understand but that prove to be grounded and wise in the long run.
 <br>
 
 <br>

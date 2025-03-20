@@ -1,5 +1,5 @@
-/* BODY */
-body {
+/* 🌟 BODY */
+body, html {
     background-color: #CAC8C3;
     margin: 0;
     padding: 0;
@@ -12,15 +12,84 @@ body {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    overflow: hidden; /* Prevents scrolling */
+    overflow: hidden; /* Prevent scrolling by default */
+    overflow-x: hidden; /* Prevent horizontal scrolling globally */
 }
 
-/* HEADERS */
+/* 🌟 BUTTONS BACKGROUND CONTAINER */
+.buttons-background {
+    border: 0.08rem solid rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 180vw; 
+    max-height: 95vh;
+    overflow: hidden; 
+}
+
+/* 🌟 BUTTON CONTAINER */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; 
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+/* 🌟 BUTTON ITEM */
+.button-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 calc(20%);
+    min-width: 180px;  
+    max-width: 180px;  
+    box-sizing: border-box;
+    overflow: visible; 
+    margin: 0; 
+}
+
+/* 🌟 IMAGE BUTTON STYLE */
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🌟 IMAGE SIZE: Scalable */
+.button-image {
+    width: 100%;  
+    height: auto;  
+    max-width: 100%;
+    max-height: 200px;  
+    object-fit: contain;  
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* 🌟 IMAGE HOVER SCALE */
+.image-button:hover .button-image {
+    transform: scale(1.1); 
+}
+
+/* 🌟 HEADERS */
 h1 {
     font-family: 'Newsreader', serif;
     font-size: clamp(3rem, 5vw, 4rem);
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.01rem;
 }
 
 h2 {
@@ -38,14 +107,14 @@ h3 {
     color: #646464;
 }
 
-/* PARAGRAPH STYLE */
+/* 🌟 PARAGRAPH STYLE */
 p {
     font-family: 'News Cycle', sans-serif;
     font-size: clamp(1.2rem, 1.8vw, 1.5rem);
-    line-height: 1.2;
+    line-height: 1.4;
 }
 
-/* DIVIDER STYLE */
+/* 🌟 DIVIDER STYLE */
 .divider {
     border: 0;
     height: 0.1rem;
@@ -55,73 +124,46 @@ p {
     width: 80%;
 }
 
+/* 🌟 MOBILE SPECIFIC STYLES - HORIZONTAL PAIRS WITH VERTICAL SCROLLING */
+@media screen and (max-width: 1024px) {
+    body {
+        overflow: hidden; /* Disable scrolling for tablet and below */
+        height: 100vh;
+    }
 
-/* BUTTONS BACKGROUND CONTAINER */
-.buttons-background {
-    border: 0.08rem solid rgba(0, 0, 0, 0.25);
-    padding: 40px; 
-    border-radius: 8px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 90vw;  /* Consistent width */
-    max-height: 95vh;
-    overflow: hidden;
-    margin-bottom: 1rem;
+    .buttons-background {
+        width: 90vw;  
+        height: auto;  
+        max-height: none; 
+        overflow: visible; 
+    }
+
+    .button-container {
+        display: flex;
+        flex-wrap: wrap; /* Wrap into pairs */
+        justify-content: center; 
+        gap: 1.5rem;  
+        overflow: visible; 
+    }
+
+    .button-item {
+        flex: 0 0 calc(50% - 0.75rem); /* Two items per row */
+        min-width: 150px;  
+        max-width: 100%;  
+        box-sizing: border-box; 
+    }
+
+    .button-image {
+        max-height: 180px; 
+        width: 100%;
+        object-fit: contain;  
+    }
 }
 
-/* BUTTON CONTAINER */
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;  
-    width: 100%;
-    max-width: 1200px;  /* Max width for large screens */
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-/* BUTTON ITEM */
-.button-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1 1 calc(20% - 1.5rem);  /* Adjusted for larger screens */
-    min-width: 180px;  
-    max-width: 220px;  
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 0; 
-}
-
-/* IMAGE BUTTON STYLE */
-.image-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* IMAGE SIZE */
-.button-image {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 200px;
-    object-fit: contain;
-    border-radius: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-/* IMAGE HOVER SCALE */
-.image-button:hover .button-image {
-    transform: scale(1.1);
+/* 🌟 TABLET SPECIFIC STYLES - UNSCROLLABLE */
+@media screen and (max-width: 768px) {
+    body {
+        overflow: hidden; /* Disable scrolling on tablets and below */
+        height: 100vh; /* Prevent vertical scrolling */
+    }
 }
