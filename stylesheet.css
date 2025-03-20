@@ -15,19 +15,61 @@ body {
     overflow: hidden; /* Prevents scrolling */
 }
 
+/* HEADERS */
+h1 {
+    font-family: 'Newsreader', serif;
+    font-size: clamp(3rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-family: 'Nixie One', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem;
+    letter-spacing: 0.1rem;
+    color: #646464;
+}
+
+/* PARAGRAPH STYLE */
+p {
+    font-family: 'News Cycle', sans-serif;
+    font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+    line-height: 1.2;
+}
+
+/* DIVIDER STYLE */
+.divider {
+    border: 0;
+    height: 0.1rem;
+    background-color: #000000;
+    opacity: 25%;
+    text-align: center;
+    width: 80%;
+}
+
+
 /* BUTTONS BACKGROUND CONTAINER */
 .buttons-background {
     border: 0.08rem solid rgba(0, 0, 0, 0.25);
-    padding: 40px; /* Increase padding for bigger container */
+    padding: 40px; 
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 180vw; /* Increase width of the container */
-    max-height: 95vh; /* Increase height of the container */
-    overflow: hidden; /* Ensure no scroll within the button container */
+    max-width: 90vw;  /* Consistent width */
+    max-height: 95vh;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 /* BUTTON CONTAINER */
@@ -36,10 +78,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem; /* Increase space between buttons */
+    gap: 1.5rem;  
     width: 100%;
+    max-width: 1200px;  /* Max width for large screens */
     box-sizing: border-box;
-    overflow: hidden; /* Prevent overflow of buttons */
+    overflow: hidden;
 }
 
 /* BUTTON ITEM */
@@ -47,12 +90,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 calc(20%);  /* Allow buttons to be larger */
-    min-width: 180px;  /* Increase button minimum width */
-    max-width: 180px;  /* Increase button maximum width */
+    flex: 1 1 calc(20% - 1.5rem);  /* Adjusted for larger screens */
+    min-width: 180px;  
+    max-width: 220px;  
     box-sizing: border-box;
-    overflow: visible; /* Ensures no overflow */
-    margin: 0; /* Removes space between button items */
+    overflow: hidden;
+    margin: 0; 
 }
 
 /* IMAGE BUTTON STYLE */
@@ -67,58 +110,18 @@ body {
     align-items: center;
 }
 
-/* IMAGE SIZE: Scalable */
+/* IMAGE SIZE */
 .button-image {
-    width: 100%;  /* Scales the image to fill the button */
-    height: auto;  /* Maintains aspect ratio */
-    max-width: 100%;  /* Ensures images are constrained to the button size */
-    max-height: 200px;  /* Increase max height for bigger images */
-    object-fit: contain;  /* Ensures the whole image is visible without distortion */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
 }
 
 /* IMAGE HOVER SCALE */
 .image-button:hover .button-image {
-    transform: scale(1.1); /* Slightly enlarge image on hover */
-}
-
-/* HEADERS */
-h1 {
-    font-family: 'Newsreader', serif;
-    font-size: clamp(3rem, 5vw, 4rem); /* Increase font size */
-    margin-bottom: 1rem;
-    margin-top: 0.01rem;
-}
-
-h2 {
-    font-family: 'Nixie One', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 2.2rem); /* Increase font size */
-    margin-bottom: 1rem;
-}
-
-h3 {
-    font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1.2rem, 2.5vw, 2rem); /* Increase font size */
-    margin-top: 0.05rem;
-    margin-bottom: 0.05rem;
-    letter-spacing: 0.1rem;
-    color: #646464;
-}
-
-/* PARAGRAPH STYLE */
-p {
-    font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1.2rem, 1.8vw, 1.5rem); /* Increase font size */
-    line-height: 1.4;
-}
-
-/* DIVIDER STYLE */
-.divider {
-    border: 0;
-    height: 0.1rem;
-    background-color: #000000;
-    opacity: 25%;
-    text-align: center;
-    width: 80%;
+    transform: scale(1.1);
 }
