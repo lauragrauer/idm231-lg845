@@ -17,8 +17,8 @@ body {
 /* BUTTONS BACKGROUND CONTAINER */
 .buttons-background {
     border: 0.08rem solid rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 8px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -26,8 +26,8 @@ body {
     justify-content: center;
     margin: auto;
     transition: transform 0.3s ease;  /* Smooth shrinking effect */
-    max-width: 90vw; 
-    max-height: 90vh;
+    max-width: 85vw; 
+    max-height: 85vh;
 }
 
 /* BUTTON CONTAINER */
@@ -55,7 +55,7 @@ body {
 }
 
 .button-image {
-    width: clamp(6rem, 10vw, 12rem);   /* Shrinks based on viewport size */
+    width: clamp(8rem, 10vw, 12rem);   /* Scales smoothly with screen */
     height: auto;
     border-radius: 0.5rem;
     transition: transform 0.3s ease;
@@ -69,20 +69,20 @@ body {
 /* HEADERS */
 h1 {
     font-family: 'Newsreader', serif;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);  /* Scale dynamically */
+    font-size: clamp(2rem, 4vw, 3rem);  /* Slightly larger scaling */
     margin-bottom: 0.5rem;
     margin-top: 0.01rem;
 }
 
 h2 {
     font-family: 'Nixie One', sans-serif;
-    font-size: clamp(1rem, 2vw, 1.5rem);  
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);  
     margin-bottom: 0.5rem;
 }
 
 h3 {
     font-family: 'News Cycle', sans-serif;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     margin-top: 0.05rem;
     margin-bottom: 0.05rem;
     letter-spacing: 0.1rem;
@@ -92,7 +92,7 @@ h3 {
 /* PARAGRAPH STYLE */
 p {
     font-family: 'News Cycle', sans-serif;
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     line-height: 1.4;
 }
 
@@ -106,21 +106,21 @@ p {
     width: 75%;
 }
 
-/* MEDIA QUERIES FOR SCALING */
+/* MEDIA QUERIES FOR GENTLE SCALING */
 @media (max-width: 1200px) {
     .buttons-background {
-        transform: scale(0.9);  /* Slightly smaller */
+        transform: scale(0.95);  /* Only slightly smaller */
     }
 }
 
 @media (max-width: 900px) {
-    .buttons-background {
-        transform: scale(0.75);  /* Shrinks for smaller screens */
+    .buttons-background, .button-image {
+        transform: scale(0.95);  /* Subtle scaling */
     }
 }
 
 @media (max-width: 600px) {
     .buttons-background {
-        transform: scale(0.6);  /* Shrinks further for mobile */
+        transform: scale(0.85);  /* Keeps content readable on mobile */
     }
 }
