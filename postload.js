@@ -4,9 +4,9 @@
 
 
 // STORE HTML OBJECTS INTO JS VARIABLES/OJECTS
-const KuromiObj = document.getElementById("Kuromi");
-const PompompurinObj = document.getElementById("Pompompurin");
-const PochaccoObj = document.getElementById("Pochacco");
+const HarpyEagleObj = document.getElementById("HarpyEagle");
+const MuteSwanObj = document.getElementById("MuteSwan");
+const BaltimoreOrioleObj = document.getElementById("BaltimoreOriole");
 
 // DISPLAY OBJECTS
 const zNameObj = document.getElementById("zName");
@@ -19,16 +19,16 @@ const DisplayAreaObj = document.getElementById("DisplayArea");
 const CloseBtnObj = document.getElementById("CloseBtn");
 
 // GET ALL BUTTONS TO CALL ONE CENTRAL FUNCTION
-KuromiObj.addEventListener('click', function() {
-    displayZodInfo('Kuromi');
+HarpyEagleObj.addEventListener('click', function() {
+    displayZodInfo('HarpyEagle');
 });
 
-PompompurinObj.addEventListener('click', function() {
-    displayZodInfo('Pompompurin');
+MuteSwanObj.addEventListener('click', function() {
+    displayZodInfo('MuteSwan');
 });
 
-PochaccoObj.addEventListener('click', function() {
-    displayZodInfo('Pochacco');
+BaltimoreOrioleObj.addEventListener('click', function() {
+  displayZodInfo('BaltimoreOriole');
 });
 
 // DISPLAY ZOD INFO FUNCTION
@@ -36,26 +36,26 @@ function displayZodInfo(whichOne) {
     // console.log('displayZodInfo called ' + whichOne);
     zNameObj.innerHTML = whichOne;
     switch (whichOne) {
-        case 'Kuromi':
-            zImageObj.src = 'media/Kuromi.png';
+        case 'HarpyEagle':
+            zImageObj.src = 'images/harpy-eagle.gif';
             zDateRangeObj.innerHTML = 'December 22 .. January 19th';
-            zDescriptionObj.innerHTML = 'Kuromi, Pochacco, Pompompurin';
+            zDescriptionObj.innerHTML = 'lelele';
             DisplayAreaObj.classList.remove("hideMe");
             // PLAY AUDIO FOR THIS CHARACTER
             playAudio('bloop');
             break;
-        case 'Pochacco':
-            zImageObj.src = 'media/Pochacco.png';
-            zDateRangeObj.innerHTML = 'November 22 .. December 21th';
-            zDescriptionObj.innerHTML = 'Kuromi, Pochacco, Pompompurin';
+        case 'MuteSwan':
+            zImageObj.src = 'images/mute-swan.gif';
+            zDateRangeObj.innerHTML = 'October 24 .. November 21th';
+            zDescriptionObj.innerHTML = 'lelele';
             DisplayAreaObj.classList.remove("hideMe");
             // PLAY AUDIO FOR THIS CHARACTER
-            playAudio('chimes');
+            playAudio('crack');
             break;
-        case 'Pompompurin':
-            zImageObj.src = 'media/Pompompurin.png';
+        case 'BaltimoreOriole':
+            zImageObj.src = 'images/baltimoreorielle.gif';
             zDateRangeObj.innerHTML = 'October 24 .. November 21th';
-            zDescriptionObj.innerHTML = 'Kuromi, Pochacco, Pompompurin';
+            zDescriptionObj.innerHTML = 'lelele';
             DisplayAreaObj.classList.remove("hideMe");
             // PLAY AUDIO FOR THIS CHARACTER
             playAudio('crack');
@@ -99,31 +99,31 @@ if (birthDateObj) {
     const day = birthDateEST.getDate();
     console.log(' month is ' + month + ' day is: ' + day);
     // CONVERT DATA TO ZODIAC SIGN
-    if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
-        astrological_sign = 'Kuromi'
-      } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
-        astrological_sign = 'Pochacco'
-      } else if ((month === 10 && day >= 24) || (month === 11 && day <= 21)) {
-        astrological_sign = 'Pompompurin'
-      } else if ((month === 9 && day >= 23) || (month === 10 && day <= 23)) {
-        astrological_sign = 'Libra'
-      } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
-        astrological_sign = 'Virgo'
-      } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
-        astrological_sign = 'Leo'
-      } else if ((month === 6 && day >= 22) || (month === 7 && day <= 22)) {
-        astrological_sign = 'Cancer'
-      } else if ((month === 5 && day >= 21) || (month === 6 && day <= 21)) {
-        astrological_sign = 'Gemini'
-      } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
-        astrological_sign = 'Taurus'
-      } else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
-        astrological_sign = 'Aries'
-      } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
-        astrological_sign = 'Pisces'
-      } else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
-        astrological_sign = 'Aquarius'
-      }
+    if ((month === 1 && day >= 1) || (month === 1 && day <= 31)) {
+      astrological_sign = 'HarpyEagle';  // January 1-31
+  } else if ((month === 2 && day >= 1) || (month === 2 && day <= 28)) {
+      astrological_sign = 'MuteSwan';   // February 1-28
+  } else if ((month === 3 && day >= 1) || (month === 3 && day <= 31)) {
+      astrological_sign = 'BaltimoreOriole'; // March 1-31
+  } else if ((month === 4 && day >= 1) || (month === 4 && day <= 30)) {
+      astrological_sign = 'StellersJay'; // April 1-30
+  } else if ((month === 5 && day >= 1) || (month === 5 && day <= 31)) {
+      astrological_sign = 'RedCrestedCardinal'; // May 1-31
+  } else if ((month === 6 && day >= 1) || (month === 6 && day <= 30)) {
+      astrological_sign = 'Roadrunner'; // June 1-30
+  } else if ((month === 7 && day >= 1) || (month === 7 && day <= 31)) {
+      astrological_sign = 'Seagull'; // July 1-31
+  } else if ((month === 8 && day >= 1) || (month === 8 && day <= 31)) {
+      astrological_sign = 'AcornWoodpecker'; // August 1-31
+  } else if ((month === 9 && day >= 1) || (month === 9 && day <= 30)) {
+      astrological_sign = 'GreatBlueHeron'; // September 1-30
+  } else if ((month === 10 && day >= 1) || (month === 10 && day <= 31)) {
+      astrological_sign = 'CanadaGoose'; // October 1-31
+  } else if ((month === 11 && day >= 1) || (month === 11 && day <= 30)) {
+      astrological_sign = 'CarolinaChickadee'; // November 1-30
+  } else if ((month === 12 && day >= 1) || (month === 12 && day <= 31)) {
+      astrological_sign = 'SnowyOwl'; // December 1-31
+  }
       displayZodInfo(astrological_sign);
 } else {
   alert('Please enter a valid date');

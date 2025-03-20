@@ -16,15 +16,15 @@ body {
     justify-content: center;
     box-sizing: border-box;
     overflow: hidden; /* Prevents scrolling */
-  }
-  
-  /* MISC xoxoxoxoxoxoxoxoxox */
+}
+
 /* HEADERS */
 h1 {
     font-family: 'Newsreader', serif;
     font-size: clamp(3rem, 5vw, 4rem); 
     margin-bottom: 1rem;
     margin-top: 0.01rem;
+    color: #646464;
 }
 
 h2 {
@@ -46,52 +46,42 @@ h3 {
 p {
     font-family: 'News Cycle', sans-serif;
     font-size: clamp(1.2rem, 1.8vw, 1.5rem); 
-    line-height: 1.4;
+    line-height: 0.4;
 }
 
-/* DIVIDER STYLE */
-.divider {
-    border: 0;
-    height: 0.1rem;
-    background-color: #000000;
-    opacity: 25%;
-    text-align: center;
-    width: 80%;
+/* Button container - centered with space between the buttons */
+.zodButtonsContainer {
+    display: flex;              /* Flex container for horizontal alignment */
+    justify-content: space-between;  /* Space buttons apart */
+    width: 80%;                /* Adjust width as needed */
+    max-width: 600px;          /* Limit the container's width */
+    margin-top: 20px;          /* Space between container and other content */
 }
 
-/* 🌟 MOBILE SPECIFIC STYLES - VERTICAL SCROLLING */
-/* 🌟 MOBILE SPECIFIC STYLES - HORIZONTAL PAIRS WITH VERTICAL SCROLLING */
+/* Individual button size */
+.zodButtons {
+    width: 200px;
+    height: 200px;
+}
 
-
-
-  .zodButtons {
-    width: 150px;
-    height: 150px;
-  }
-  
-  button {
-    /* I WANT TO REMOVE THE BUTTON BORDER */
-    /* REMOVE BUTTON BACKGROUND */
-    /* ADD CURSOR CHANGE ON HOVER */
+/* Button styles */
+button {
+    /* Remove button border */
     border: none;
     background-color: transparent;
     cursor: pointer;
-    
-  }
-  
-  button:active {
-    /* ANIMATE OLD SCHOOL BUTTON PRESS */
-    /* transform: translateX(2px);
-    transform: translateY(2px); */
+}
+
+button:active {
+    /* Animate button press */
     transform: translate3d(2px, 2px, 0px);
-  }
-  
-  #DisplayArea img {
-    width: 50px;
-  }
-  
-  
-  #DisplayArea {
+}
+
+#DisplayArea img {
+    width: 250px;
+}
+
+#DisplayArea {
     border: 4px solid rgb(134, 120, 120);  /* Border around the area */
     padding: 10px;  /* Padding inside the container */
     width: 600px;  /* Increase width to make it wider */
@@ -104,10 +94,7 @@ p {
     box-sizing: border-box;  /* Include padding and border in the total width/height */
 }
 
-
-  
-  /* USE A CLASS TO HIDE DISPLAY AREA */
-  /* WITH OPACITY 0 YOU CAN FADE IN FADE OUT... HE LIKES THAT .. IN THE INDEX AREA*/
-  .hideMe {
+/* Use a class to hide the display area */
+.hideMe {
     display: none;
-  }
+}
