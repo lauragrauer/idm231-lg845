@@ -23,13 +23,14 @@ h1 {
     font-family: 'Newsreader', serif;
     font-size: 3.5rem;
     color: #4F3225;
-    margin-bottom: 20px; /* Added space below h1 */
+    margin-bottom: 1%;
 }
 
 h2 {
     font-family: 'Nixie One', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    margin-top: 1%;
 }
 
 h3 {
@@ -53,18 +54,18 @@ p {
 
 /* Button container - aligned horizontally */
 .zodButtonsContainer {
-    display: flex;              /* Flex container for horizontal alignment */
-    justify-content: center;    /* Center buttons horizontally */
-    gap: 15px;                  /* Reduced gap between buttons */
-    width: 80%;                 /* Adjust width as needed */
-    max-width: 900px;           /* Increase max width to accommodate all buttons */
-    margin-top: 20px;           /* Space between container and other content */
+    display: flex;             
+    justify-content: center;  
+    gap: 15px;                
+    width: 100%;           
+    max-width: 1000px;
+    margin-top: 20px;      
 }
 
 /* Individual button size */
 .zodButtons {
-    width: 120px;               /* Smaller size for the buttons */
-    height: 120px;              /* Smaller size for the buttons */
+    width: 130px;            
+    height: 130px;         
 }
 
 /* Button styles */
@@ -80,7 +81,7 @@ button:active {
 }
 
 #DisplayArea img {
-    width: 250px;
+    width: 350px;
 }
 
 #DisplayArea {
@@ -96,14 +97,14 @@ button:active {
     box-sizing: border-box;
 }
 
-/* Use a class to hide the display area */
+
 .hideMe {
     display: none;
 }
 
 /* Submit button styling */
 .submit-container {
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
@@ -117,6 +118,7 @@ button:active {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #zSubmit:hover {
@@ -125,8 +127,8 @@ button:active {
 
 /* Styling for input date field */
 input[type="date"] {
-    padding: 8px;
-    margin: 10px 0;
+    padding: 15px 20px;
+    margin: 5px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
@@ -136,6 +138,8 @@ input[type="date"] {
     background-color: rgba(31, 26, 26, 0.9);
     background-blend-mode: multiply;
     padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     border-radius: 8px;
     box-sizing: border-box;
     display: flex;
@@ -154,6 +158,7 @@ input[type="date"] {
     padding: 5px 10px; /* Adjust padding to maintain the same internal spacing */
     margin: 0; /* Remove any margin */
 }
+
 
 
 
