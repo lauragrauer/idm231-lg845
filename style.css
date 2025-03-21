@@ -20,13 +20,6 @@ body {
 }
 
 /* HEADERS */
-h1 {
-    font-family: 'Newsreader', serif;
-    font-size: 3.5rem;
-    color: #4F3225;
-    margin-bottom: 0.5rem;
-    margin-top: 3rem;
-}
 
 h2 {
     font-family: 'Nixie One', sans-serif;
@@ -186,7 +179,13 @@ input[type="date"] {
     margin: 0;
 }
 
-
+h1 {
+    font-family: 'Newsreader', serif;
+    font-size: 3.5rem;
+    color: #4F3225;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+}
 
 
 
