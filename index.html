@@ -4,47 +4,102 @@
 <head>
   <meta charset="utf-8">
   <title>HOLLA</title>
-  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="style.css">
   <script src="preload.js"></script>
 </head>
 
 <body>
-  <button id="Kuromi">
-    <img class="zodButtons" src="media/Kuromi.png" alt="Kuromi image">
-  </button>
+  <h1>HAPPY ''BIRD'' DAY!</h1>
+  
+  <hr class="divider">
+  <h2>Which bird resonates with you the most?</h2>
+  <!-- Add a form with input date field -->
+  <form action="">
+    <input type="date" id="zBirthday" required>
+  </form>
 
-  <button id="Pochacco">
-    <img class="zodButtons" src="media/Pochacco.png" alt="Pochacco image">
-  </button>
-
-  <button id="Pompompurin">
-    <img class="zodButtons" src="media/Pompompurin.png" alt="Pompompurin image">
-  </button>
-
-  <hr>
-  <!-- ADD A FORM WITH INPUT DATE FIELD -->
-    <form action="">
-      <input type="date" id="zBirthday" required>
-    </form>
+  <!-- Submit button below all images -->
+  <div class="submit-container">
     <button id="zSubmit">SUBMIT</button>
+  </div>
 
+  <!-- Button container with flex layout for birds -->
+  <div class="buttons-background">
+  <div class="zodButtonsContainer">
+    <button id="HarpyEagle">
+      <img class="zodButtons" src="images/harpy-eagle.png" alt="harpy-eagle image">
+    </button>
+
+    <button id="MuteSwan">
+      <img class="zodButtons" src="images/mute-swan.png" alt="mute-swan image">
+    </button>
+
+    <button id="BaltimoreOriole">
+      <img class="zodButtons" src="images/baltimore-oriole.png" alt="baltimore-oriole image">
+    </button>
+
+    <button id="StellersJay">
+      <img class="zodButtons" src="images/stellers-jay.png" alt="stellers-jay image">
+    </button>
+  </div>
+  <div class="zodButtonsContainer">
+    <button id="RedCrestedCardinal">
+      <img class="zodButtons" src="images/red-crested-cardinal.png" alt="red-crested-cardinal image">
+    </button>
+
+    <button id="Roadrunner">
+      <img class="zodButtons" src="images/roadrunner.png" alt="roadrunner image">
+    </button>
+
+    <button id="Seagull">
+      <img class="zodButtons" src="images/seagull.png" alt="seagull image">
+    </button>
+
+    <button id="AcornWoodpecker">
+      <img class="zodButtons" src="images/acorn-woodpecker.png" alt="acorn-woodpecker image">
+    </button>
+  </div>
+  <div class="zodButtonsContainer">
+    <button id="GreatBlueHeron">
+      <img class="zodButtons" src="images/great-blue-heron.png" alt="great-blue-heron image">
+    </button>
+
+    <button id="CanadaGoose">
+      <img class="zodButtons" src="images/canada-goose.png" alt="canada-goose image">
+    </button>
+
+    <button id="CarolinaChickadee">
+      <img class="zodButtons" src="images/carolina-chickadee.png" alt="carolina-chickadee image">
+    </button>
+
+    <button id="SnowyOwl">
+      <img class="zodButtons" src="images/snowy-owl.png" alt="snowy-owl image">
+    </button>
+  </div>
+  <button id="Question">
+    <img class="zodButtons" src="images/questionmark.png" alt="questionmark image">
+  </button>
+  </div>
+
+  <!-- Divider -->
   <hr>
+
   <div id="DisplayArea" class="hideMe">
     <h2 id="zName">ZOD Name</h2>
     <img id="zImage" src="media/Hangyodon.png" alt="Hangyodon">
     <h4 id="zDateRange">Start - End</h4>
     <p id="zDescription">Main Description of the zod character goes here and it will be wonderful</p>
-    <button id="CloseBtn">Close</button></buttn>
+    <button id="CloseBtn">Close</button>
   </div>
 
   <audio id="bloop" src="snd/bloop.mp3">
-    Your pathetic prowser does not support HTML5 audio you degenerate. Walk Away.
+    Your browser does not support HTML5 audio.
   </audio>
   <audio id="chimes" src="snd/chimes.mp3">
-    Your pathetic prowser does not support HTML5 audio you degenerate. Walk Away.
+    Your browser does not support HTML5 audio.
   </audio>
   <audio id="crack" src="snd/crack.mp3">
-    Your pathetic prowser does not support HTML5 audio you degenerate. Walk Away.
+    Your browser does not support HTML5 audio.
   </audio>
 
   <script src="postload.js"></script>
