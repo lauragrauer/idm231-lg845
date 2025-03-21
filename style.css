@@ -180,11 +180,12 @@ input[type="date"] {
 }
 
 h1 {
-    font-family: 'Nixie One', serif;
+    font-family: 'Newsreader', serif;
     font-size: 3.5rem;
     color: #4F3225;
     margin-bottom: 0.5rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
+    padding-top: 3rem;
 }
 
 
