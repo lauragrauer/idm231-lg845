@@ -51,7 +51,7 @@ p {
 .zodButtonsContainer {
     display: flex;             
     justify-content: center;  
-    gap: 12px;                
+    gap: 15px;                
     width: 100%;         
     max-width: 1000px;
 }
@@ -157,7 +157,7 @@ input[type="date"] {
     background-color: #1f1a1a;
     background-color: rgba(31, 26, 26, 0.9);
     background-blend-mode: multiply;
-    padding: 40px;
+    padding: 275px;
     padding-left: 100px;
     padding-right: 100px;
     border-radius: 20px;
@@ -180,11 +180,11 @@ input[type="date"] {
 }
 
 h1 {
-    font-family: 'Newsreader', serif;
+    font-family: 'Nixie One', serif;
     font-size: 3.5rem;
     color: #4F3225;
     margin-bottom: 0.5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 
