@@ -57,7 +57,7 @@ p {
     justify-content: center;    /* Center buttons horizontally */
     gap: 15px;                  /* Reduced gap between buttons */
     width: 80%;                 /* Adjust width as needed */
-    max-width: 800px;           /* Increase max width to accommodate all buttons */
+    max-width: 900px;           /* Increase max width to accommodate all buttons */
     margin-top: 20px;           /* Space between container and other content */
 }
 
